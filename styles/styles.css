@@ -4,28 +4,28 @@
 
 @font-face {
 font-family: "Aristotelica";
-src: url("/public/fonts/aristotelica/Aristotelica-Text-Thin-trial.ttf");
+src: url("/assets/fonts/aristotelica/Aristotelica-Text-Thin-trial.ttf");
 font-weight: 200;
 font-style: normal;
 }
 
 @font-face {
 font-family: "Aristotelica";
-src: url("/public/fonts/aristotelica/Aristotelica-Text-ExtraLight-trial.ttf");
+src: url("/assets/fonts/aristotelica/Aristotelica-Text-ExtraLight-trial.ttf");
 font-weight: 300;
 font-style: normal;
 }
 
 @font-face {
 font-family: "Aristotelica";
-src: url("/public/fonts/aristotelica/Aristotelica-Text-Regular-trial.ttf");
+src: url("/assets/fonts/aristotelica/Aristotelica-Text-Regular-trial.ttf");
 font-weight: 400;
 font-style: normal;
 }
 
 @font-face {
 font-family: "Aristotelica";
-src: url("/public/fonts/aristotelica/Aristotelica-Text-DemiBold-trial.ttf");
+src: url("/assets/fonts/aristotelica/Aristotelica-Text-DemiBold-trial.ttf");
 font-weight: 700;
 font-style: normal;
 letter-spacing: 0px;
@@ -33,7 +33,7 @@ letter-spacing: 0px;
 
 @font-face {
 font-family: "Aristotelica";
-src: url("/public/fonts/aristotelica/Aristotelica-Text-Bold-trial.ttf");
+src: url("/assets/fonts/aristotelica/Aristotelica-Text-Bold-trial.ttf");
 font-weight: 800;
 font-style: normal;
 }
