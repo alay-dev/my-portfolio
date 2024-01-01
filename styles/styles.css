@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+font-family: "Aristotelica";
+src: url("/public/fonts/aristotelica/Aristotelica-Text-Thin-trial.ttf");
+font-weight: 200;
+font-style: normal;
+}
+
+@font-face {
+font-family: "Aristotelica";
+src: url("/public/fonts/aristotelica/Aristotelica-Text-ExtraLight-trial.ttf");
+font-weight: 300;
+font-style: normal;
+}
+
+@font-face {
+font-family: "Aristotelica";
+src: url("/public/fonts/aristotelica/Aristotelica-Text-Regular-trial.ttf");
+font-weight: 400;
+font-style: normal;
+}
+
+@font-face {
+font-family: "Aristotelica";
+src: url("/public/fonts/aristotelica/Aristotelica-Text-DemiBold-trial.ttf");
+font-weight: 700;
+font-style: normal;
+letter-spacing: 0px;
+}
+
+@font-face {
+font-family: "Aristotelica";
+src: url("/public/fonts/aristotelica/Aristotelica-Text-Bold-trial.ttf");
+font-weight: 800;
+font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.lets-get-to-point-marquee {
+    animation-name: lets-get-to-point-animation ;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+
+@keyframes lets-get-to-point-animation {
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-50.5%);}
+}
+
+.developer-title-marquee {
+    animation-name: developer-title-animation ;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+
+@keyframes developer-title-animation {
+    0%{transform: translateX(-50.5%); }
+    100%{transform: translateX(0%);}
+}
+
+
+.custom__cursor__inner{
+    height: 0.75rem;
+    width: 0.75rem;
+    position: fixed;
+    transform: translate(0px, 0px);
+    background-color: #fff;
+    border-radius: 50%;
+    transition: height .3s cubic-bezier(0.46,0.03,0.52,0.96), width .3s cubic-bezier(0.46,0.03,0.52,0.96);
+    z-index: 5000;
+    pointer-events: none;
+}
+
+.custom__cursor__outer{
+    height: 3.5rem;
+    width:  3.5rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: fixed;
+    z-index: 5000;
+    transform: translate(0px, 0px);
+    pointer-events: none;
+    transition: opacity 0.15s ease-in-out 0s, height 0.2s ease-in-out 0s, width 0.2s ease-in-out 0s;
+    /* transition: all 0.1s ease-in-out; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .custom__cursor__inner,.custom__cursor__outer {
+        display: none
+    }
+}
